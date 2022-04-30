@@ -1,0 +1,51 @@
+<head>
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+<div class="card">
+
+  <h1 class="Header">Weather Condtion</h1>
+          <div class="Date">
+              <label class="label">Choose a Date :</label>
+             <!-- <input [(ngModel)]="DateInput" type="text" id="dateInput" placeholder="YYYY-MM-DD"/>-->
+              <select name="date" id="Date" [(ngModel)]="DateInput">
+                  <option value="{{date1}}">{{date1}}</option>
+                  <option value="{{date2}}">{{date2}}</option>
+                  <option value="{{date3}}">{{date3}}</option>
+                  <option value="{{date4}}">{{date4}}</option>
+                  <option value="{{date5}}">{{date5}}</option>
+                  <option value="{{date6}}">{{date6}}</option>
+                  <option value="{{date7}}">{{date7}}</option>
+              </select>
+          </div>
+          <div class="Hours">
+              <label class="label">Choose an Hour:</label>
+              <br>
+              <select name="Hours" id="Hours" [(ngModel)]="TimeInput" >
+                  <option value="00:00">00</option>
+                  <option value="01:00">01</option>
+                  <option value="02:00">02</option>
+                  <option value="03:00">03</option>
+                  <option value="04:00">04</option>
+                  <option value="05:00">05</option>
+                  <option value="06:00">06</option>
+                  <option value="07:00">07</option>
+                  <option value="08:00">08</option>
+                  <option value="09:00">09</option>
+                  <option value="10:00">10</option>
+                  <option value="11:00">11</option>
+                  <option value="12:00">12</option>
+                  <option value="13:00">13</option>
+                  <option value="14:00">14</option>
+                  <option value="15:00">15</option>
+                  <option value="16:00">16</option>
+                  <option value="17:00">17</option>
+                  <option value="18:00">18</option>
+                  <option value="19:00">19</option>
+                  <option value="20:00">20</option>
+                  <option value="21:00">21</option>
+                  <option value="22:00">22</option>
+                  <option value="23:00">23</option>
+              </select>
+          </div>
+</div>
+<app-Temperature [parentData1]="getDay(DateInput,TimeInput)" ></app-Temperature>

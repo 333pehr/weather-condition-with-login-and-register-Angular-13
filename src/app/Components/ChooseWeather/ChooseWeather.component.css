@@ -1,0 +1,64 @@
+.card {
+    margin: 0 auto;
+  margin-top: 5%;
+  padding: 5px 30px;
+  width: 290px;
+  height: 470px;
+  border-radius: 10px;
+  border: solid white 1px;
+  background-color: rgba(255, 255, 255,0.15);
+  backdrop-filter: blur(20px) saturate(120%) contrast(200%);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Header {
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 55px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .designer {
+    margin-top: 100px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(72, 72, 72);
+  }
+  .Date{
+    height: 150px;
+  }
+  .label{
+    height: 50px;
+    color: white;
+  }
+  #Hours{
+    margin-bottom: 15px;
+    width: 100%;
+    align-content: center;
+    background-color: rgba(255,255, 255, 0.1);
+    border-radius: 10px;
+    padding: 7px 7px 7px 10px;
+    color: white;
+    font-weight: 550;
+    border: solid 1px white;
+  }
+  #button{
+    margin-top: 40px;
+  }
+  
+  #dateInput{
+    width: 100%;
+  }
+  #Date{
+    margin-bottom: 15px;
+    width: 100%;
+    align-content: center;
+    background-color: rgba(255,255, 255, 0.1);
+    border-radius: 10px;
+    padding: 7px 7px 7px 10px;
+    color: white;
+    font-weight: 550;
+    border: solid 1px white;
+  }

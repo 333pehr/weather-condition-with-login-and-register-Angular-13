@@ -1,0 +1,17 @@
+<div class="body">
+  <div class="card">
+  
+    <p class="login-top">Create New Account<p>
+    <form class="Inputs" [formGroup]="form" (submit)="submit()">
+      <input formControlName="name" type="text" placeholder="Name" class="UserInput">
+      <input type="username" formControlName="username" placeholder="Username" class="UserPass">
+      <input formControlName="password" type="password" placeholder="Password" class="ConfirmPass">
+      <button class="SubmitButton">Sign Up</button>
+    </form>   
+      <h3 class="noAcc">Already have an Account?</h3>
+      <br>
+      <button class="signIn" type="submit" (click)="redirect()">Sign In</button>
+  </div>
+  
+  </div>
+  

@@ -1,0 +1,76 @@
+<div class="container">
+  <button class="btn btn-danger backButton" role="button" data-bs-toggle="button" (click)="getWeather();getMoodFun()">Get Mood</button>
+  </div>
+  <div *ngIf="getMoodButton" class="container">
+      <div class="card">
+  
+          <h2>ANTALYA</h2>
+              <h1 class="weather">{{ weather }}°</h1>
+              <div class="date">
+                  <ul [ngSwitch]="getMood()">
+                      <li *ngSwitchCase="'Sick'">
+                          <div icon="snowy" data-label="Chilly">
+                              <div class="breezy">
+                                  <ul>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>	
+                                  </ul>
+                                  <span class="cloudr"></span>
+                              </div>
+                          </div>
+                          <br>
+                          
+                      </li>
+                      <li *ngSwitchCase="'Depressed'">
+                          <div class="night">
+                              <span class="moon"></span>
+                              <span class="spot1"></span>
+                              <span class="spot2"></span>
+                              <ul>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>	
+                                  </ul>
+                              
+                              </div>
+                          </li>
+                      <li *ngSwitchCase="'Low'">
+                          <div class="stormy">
+                              <ul>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              </ul>
+                              <span class="snowe"></span>
+                              <span class="snowex"></span>
+                              <span class="stick"></span>
+                              <span class="stick2"></span>
+                          </div>
+                      </li>
+                      <li *ngSwitchCase="'Cheerful'">
+                          <div class="cloudy">
+                              <span class="cloud"></span>
+                              <span class="cloudx"></span>
+                          </div>
+                      </li>
+                      <li *ngSwitchCase="'Angry'">
+                          <div class="hot">
+                              <span class="sun"></span>
+                              <span class="sunx"></span>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <span class="table2 mood">{{ getMood() }}</span>
+      </div>
+  </div>

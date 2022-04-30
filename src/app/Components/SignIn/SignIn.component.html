@@ -1,0 +1,17 @@
+<div class="body">
+  <div class="card">
+  
+    <p class="login-top">Login to Your Account<p>
+    <form class="Inputs" [formGroup]="form" (submit)="submit()">
+      <input type="text" placeholder="Username" class="UserInput" formControlName="username">
+      <input type="password" placeholder="Password" class="UserPass" formControlName="password">
+      <span class="wrongPass">{{passMessage}}</span>
+      <button class="SubmitButton">Log In</button>   
+    </form>
+    <h3 class="noAcc">Don't Have Any Account?</h3>
+    <br>
+    <button class="signUp" routerLinkActive="active" (click)="redirect()">Sign Up</button>
+  </div>
+    
+  </div>
+  
